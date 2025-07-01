@@ -1,0 +1,9 @@
+{
+	"devices": [
+		{
+			"name": "My remote machine",
+			"mac_address": "12:34:56:78:90:ab",
+			"ssh_host": "user@remote-machine"
+		}
+	]
+}
