@@ -16,15 +16,15 @@ Simple script to Wake-on-LAN remote devices via SSH.
    ```sh
    edit config.json
    ```
-2. Run the script
+2. Run the script with `uv run`
    ```sh
    uv run wake.py
    ```
-   or
+   or on Linux / macOS
    ```sh
-   ./wake.sh
+   ./wake.py
    ```
-   or
+   or on PowerShell
    ```sh
    .\wake.ps1
    ```
