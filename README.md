@@ -1,6 +1,6 @@
 # Wake
 
-Simple script to wake-on-lan remote devices via ssh.
+Simple script to Wake-on-LAN remote devices via SSH.
 
 ## Prerequisites
 
@@ -12,6 +12,9 @@ Simple script to wake-on-lan remote devices via ssh.
 1. Configure `config.json`
    ```sh
    cp config.example.json config.json
+   ```
+   ```sh
+   edit config.json
    ```
 2. Run the script
    ```sh
