@@ -2,6 +2,15 @@
 
 Simple script to Wake-on-LAN remote devices via SSH.
 
+```mermaid
+graph LR
+    subgraph Remote
+        B(SSH Host) -- Wake on LAN --> C(Target Machine)
+    end
+
+    A(Local Machine) -- SSH --> B
+```
+
 ## Prerequisites
 
 - [uv](https://docs.astral.sh/uv/) installed on local machine
