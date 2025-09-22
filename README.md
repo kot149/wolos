@@ -1,6 +1,6 @@
 # Wake
 
-Simple script to Wake-on-LAN remote devices via SSH.
+A simple script to Wake-on-LAN remote devices via SSH.
 
 ```mermaid
 graph LR
