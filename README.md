@@ -14,7 +14,7 @@ graph LR
 ## Prerequisites
 
 - [uv](https://docs.astral.sh/uv/) installed on local machine
-- `wakeonlan` command installed on SSH host
+- On SSH host: `wakeonlan` command, or [uvx](https://docs.astral.sh/uv/concepts/tools/) (falls back to `uvx wakeonlan` when `wakeonlan` is not found)
 
 ## Usage
 

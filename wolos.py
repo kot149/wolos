@@ -24,9 +24,14 @@ def load_config():
 
 def wake_device(host: str, mac_address: str):
     """Execute Wake on LAN command via SSH"""
+    def run_wol(cmd_str: str):
+        cmd = ['ssh', host, cmd_str]
+        return subprocess.run(cmd, capture_output=True, text=True)
+
     try:
-        cmd = ['ssh', host, f'wakeonlan {mac_address}']
-        result = subprocess.run(cmd, capture_output=True, text=True)
+        result = run_wol(f'wakeonlan {mac_address}')
+        if result.returncode != 0 and 'not found' in result.stderr.lower():
+            result = run_wol(f'uvx wakeonlan {mac_address}')
         if result.returncode != 0:
             print(f'Error: Failed to execute Wake on LAN command\n{result.stderr}')
             sys.exit(1)
