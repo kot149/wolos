@@ -1,4 +1,4 @@
-# wolos: Wake-on-LAN over SSh
+# wolos: Wake-on-LAN over SSH
 
 A simple script to send Wake-on-LAN packets to remote devices over SSH.
 
