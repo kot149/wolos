@@ -1,6 +1,6 @@
-# Wake
+# wolos: Wake-on-LAN over SSh
 
-A simple script to Wake-on-LAN remote devices via SSH.
+A simple script to send Wake-on-LAN packets to remote devices over SSH.
 
 ```mermaid
 graph LR
@@ -27,9 +27,9 @@ graph LR
    ```
 2. Run the script
    ```sh
-   ./wake
+   ./wolos
    ```
    or
    ```sh
-   uv run wake.py
+   uv run wolos.py
    ```
