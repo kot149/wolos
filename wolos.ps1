@@ -1,1 +1,1 @@
-uv run wake.py
+uv run wolos.py
